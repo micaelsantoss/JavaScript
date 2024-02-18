@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Teste de Velocidade</h1>
+    <div id="teste">
+        <label for="vel">Velocidade</label>
+        <input type="number" name="Velocidade" id="vel" required>
+        <input type="button" value="enviar" onclick="envio()">
+        <div id="res">Resultado</div>
+    </div> 
+
+    <script>
+        function envio(){
+            var velocidade = window.document.getElementById ('vel')
+            var resultado = window.document.getElementById ('res')
+            var velo = Number (velocidade.value) //transformar o valor em números 
+            resultado.innerHTML = `A sua velocidade atual é de ${velo}km/h`
+            if (velo > 60) {
+                resultado.innerHTML += ` Sua velocidade está acima da máxima permitida, <strong>Multado</strong>!` 
+            } else {
+                resultado.innerHTML = `Sua velocidade está abaixo da máxima permitida, Parabéns!` 
+            }
+        }
+    </script>
+</body>
+</html>
