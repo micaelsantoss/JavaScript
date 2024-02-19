@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+
+    <h1>Qual o seu país</h1>
+    <div id="teste">
+        <label for="pais">Nacionalidade</label>
+        <input type="text" name="pais" id="pais">
+        <input type="button" value="enviar" onclick="envio()">
+        <div id="res">Resultado</div>
+    </div> 
+
+    <script>
+        function envio(){
+            var nacio = window.document.getElementById ('pais')
+            var resultado = window.document.getElementById ('res')
+            var nac = String (nacio.value)
+
+            if (nac == 'brasil') {
+                resultado.innerHTML = `Você é Brasileiro` 
+            } else {
+                resultado.innerHTML = `Você é estrangeiro` 
+            }
+        }    
+    </script>
+</body>
+</html>
