@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Teste de perfil</h1>
+    </header> 
+    
+    <section>
+        <div id="txt">
+            <h2>Preencha as seguintes informações</h2>
+            <div id="data">
+                <label for="anon">Digite seu ano de nascimento:</label>
+                <input type="number" name="anon" id="anon" required>
+            </div>
+            <p> 
+                Selecione seu sexo: 
+                <label for="masc">Masculino</label>
+                <input type="radio" name="rads" id="masc" checked>
+
+                <label for="fem">Feminino</label>
+                <input type="radio" name="rads" id="fem" >
+            </p>
+            <input id="envio" type="submit" value="Enviar" onclick="carregar()">
+        </div>
+        <p id="res">Preencha os dados para a respsota</p>
+        <div id="foto">
+            <img src="criancah.jpg" alt="foto" width="200px" height="200px">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;MikeAlone</p>
+    </footer>
+</body>
+</html>

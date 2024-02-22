@@ -1,0 +1,55 @@
+body{
+    background-color: burlywood;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+section{
+    background-color: white;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.479);
+    margin: auto;
+    padding: 10px;
+}
+
+div#txt{
+
+}
+
+h2{
+
+}
+
+input#anon{
+    width: 70px;
+}
+
+input#envio{
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 10px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+}
+
+input#envio:hover{
+    background-color: rgb(16, 112, 80);
+    color: white;
+}
+
+div#foto{
+
+}
+
+img{
+    border-radius: 50%;
+}
+
+footer{
+    color: white;
+}
