@@ -17,7 +17,7 @@
             <h2>Preencha as seguintes informações</h2>
             <div id="data">
                 <label for="anon">Digite seu ano de nascimento:</label>
-                <input type="number" name="anon" id="anon" required>
+                <input type="number" name="anon" id="anon" min="0">
             </div>
             <p> 
                 Selecione seu sexo: 
@@ -29,10 +29,8 @@
             </p>
             <input id="envio" type="submit" value="Enviar" onclick="carregar()">
         </div>
-        <p id="res">Preencha os dados para a respsota</p>
-        <div id="foto">
-            <img src="criancah.jpg" alt="foto" width="200px" height="200px">
-        </div>
+        <p id="res">Preencha os dados para a resposta</p>
+    
     </section>
 
     <footer>
@@ -40,3 +38,4 @@
     </footer>
 </body>
 </html>
+
