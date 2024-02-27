@@ -16,7 +16,7 @@ function carregar(){
                 genero = 'Homem' //colocando informação na variavel "genero"
                 if (calc >= 0 && calc < 10){
                     //criança 
-                    img.setAttribute('src', 'criancah.jpg')
+                    img.setAttribute('src', 'criancah.jpg') //atribuindo imagem para variante img
                 } else if(calc < 20){
                     //jovem
                     img.setAttribute('src', 'adolecenteh.jpg')         
