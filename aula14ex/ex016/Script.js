@@ -9,7 +9,7 @@ function clicar(){
    
     var res = window.document.getElementById('res')
 
-    if (vnum1 == 0 || vnum2 == 0){
+    if (num1.value.length == 0 || num2.value.length == 0){
         res.innerHTML = 'Impossível contar!'
     }  else {
         i = Number (num1.value)

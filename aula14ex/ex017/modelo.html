@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Horário</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
     <script src="Script.js"></script>
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Tabuada</h1>
     </header>
 
     <section>
         <div>
-            
+            Digite um número: <input type="number" name="txtn" id="txtn"> 
+
+            <input type="submit" value="enviar" onclick="tabuada()">
         </div>
         <div>
-            
+            <select name="tabu" id="tab" size="10">
+                <option value="">Digite um número acima</option>
+            </select>
         </div>
     </section>
 
@@ -25,4 +29,4 @@
         <p>&copy;MikeAlone</p>
     </footer>
 </body>
-</html>
+</html
