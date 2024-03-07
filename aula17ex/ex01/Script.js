@@ -1,22 +1,3 @@
-/*function verificar(){
-    var numadc = window.document.getElementById('na')
-    var lista = window.document.getElementById('valores')
-    
-
-    if(numadc.value.length == 0){
-        window.alert('Por favor, digite um número!')
-    } else { 
-        var valornumadc = Number (numadc.value)
-        numeros.push(valornumadc)
-        var itens = window.document.createElement('option')
-        itens.text = `Número ${valornumadc} adicionado!`
-        lista.appendChild(itens)
-    }
-    
-}*/
-
-
-
 var valores = []
 
 function numeros(n){
@@ -56,6 +37,7 @@ function Adicionar(){
 
 function Verificar(){
     let res = document.getElementById('res')
+
     if (valores.length == 0){
         window.alert ('Erro, por favor adicione os números')   
     } else{
@@ -86,5 +68,6 @@ function Verificar(){
 function Limpar(){
     res.innerHTML = ''
     na.value = ''
-    itens.text = ''
+    valores = []
+    lista.innerHTML = ''
 }
